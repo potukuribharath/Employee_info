@@ -1,9 +1,9 @@
-package com.employee.demo;
+package com.employee.demo.entiry;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+// Table 1
 @Entity
 @Table(name="employe_details")
 public class Employee {
@@ -14,13 +14,12 @@ public class Employee {
 	private long empcompensation;
 	private String performance;
 	private String feedback;
-	private String personal_details;
+	private String employee_id;
 	private long emp_mobile;
 	private int org_id;
 	private String time;
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Employee(int empid, String empname, long empcompensation, String performance, String feedback,
 			String personal_details, long emp_mobile, int org_id, String time) {
@@ -30,7 +29,7 @@ public class Employee {
 		this.empcompensation = empcompensation;
 		this.performance = performance;
 		this.feedback = feedback;
-		this.personal_details = personal_details;
+		this.employee_id = personal_details;
 		this.emp_mobile = emp_mobile;
 		this.org_id = org_id;
 		this.time = time;
@@ -67,11 +66,11 @@ public class Employee {
 	public void setFeedback(String feedback) {
 		this.feedback = feedback;
 	}
-	public String getPersonal_details() {
-		return personal_details;
+	public String getEmployee_id() {
+		return employee_id;
 	}
-	public void setPersonal_details(String personal_details) {
-		this.personal_details = personal_details;
+	public void setEmployee_id(String personal_details) {
+		this.employee_id = personal_details;
 	}
 	public long getEmp_mobile() {
 		return emp_mobile;
